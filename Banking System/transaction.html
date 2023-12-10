@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+    <link rel="stylesheet" href="mystyles.css">
+    <script src="transScript.js"></script>
+</head>
+<body>
+    <div class="nav-container">
+        <div>
+            <a href="index.html">
+                Home
+            </a>
+        </div>
+        <div>
+            <a href="transaction.html">
+                Transaction
+            </a>
+        </div>
+        <div>
+            <a href="accounts.html">
+                Accounts
+            </a>
+        </div>
+        <div>
+            <a href="about.html">
+                About
+            </a>
+        </div>
+    </div>
+    <h1>
+        Transaction
+    </h1>
+    <div class="transac">
+        <div>
+            <label>Receipient</label>
+            <div><input type="text" id="receipient"></div>
+        </div>
+        <div>
+            <label>Amount</label>
+            <div><input type="number" id="amount"></div>
+        </div>
+        <div>
+            <label>Type</label>
+            <div><input type="radio" name="trans-type" value="Income">Income <input type="radio" name="trans-type" value="Expense"> Expense</div>
+        </div>
+        <input type="button" value="submit" id="sbtn">
+    </div>
+    <br>
+    <table id="trans-table">
+        <tr>
+            <th>Sl.no</th>
+            <th>Receipient</th>
+            <th>Amount</th>
+            <th>Type</th>
+        </tr>
+    </table>
+</body>
+</html>

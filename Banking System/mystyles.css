@@ -1,0 +1,179 @@
+.nav-container {
+    background-color: rebeccapurple;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-container div {
+    display: flex;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: aliceblue;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container div:hover {
+    background-color: red;
+}
+
+.nav-container div:hover a {
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+body,
+html {
+    margin: 0;
+    height: 100dvh;
+    /* min-height: 100%; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px;
+    background: -webkit-gradient(linear, center top, center bottom, color-stop(15%, white), color-stop(75%, blue));
+}
+
+.title {
+    color: rgb(40, 10, 28);
+    display: flex;
+    height: 80%;
+    width: 100%;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    font-size: 100px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title div {
+    margin-top: 5px;
+    padding-top: 5px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.footer {
+    color: aliceblue;
+    font-size: 20px;
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    bottom: 0;
+    overflow-x: hidden;
+}
+
+.footer p {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: moveLeftToRight 15s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-60%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.content {
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    flex-direction: column;
+}
+
+.acc-body{
+    display: flex;
+    height: 94%;
+}
+
+.right-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    
+}
+
+.right-content input {
+    width: 500px;
+    height: 35px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.reg-form div{
+    margin-bottom: 15px;
+}
+
+#btn-reg {
+    background-color: red;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+#btn-reg:hover {
+    background-color: rgb(176, 10, 10);
+}
+
+.transac {
+    display: flex;
+}
+
+.transac div{
+    margin-left: 15px;
+}
+
+.transac div div{
+    margin-left: 0px;
+    margin-right: 15px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+    background-color: rgb(134, 124, 224);
+}
+
+td {
+    background-color: azure;
+    text-align: center;
+    border: 1px solid #ddd;
+}
