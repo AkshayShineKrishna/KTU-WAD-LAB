@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even</title>
+</head>
+
+<body>
+    <h1 id="heading"></h1>
+    <script>
+        let a = prompt("Enter a number");
+        let b = parseInt(a);
+        var heading = document.getElementById("heading");
+
+        if (b % 2 == 0)
+            heading.innerHTML = b + " is Even";
+        else
+            heading.innerHTML = b + " is Odd";
+
+    </script>
+</body>
+
+</html>
