@@ -177,3 +177,21 @@ td {
     text-align: center;
     border: 1px solid #ddd;
 }
+
+#trans-title {
+    margin-left: 15px;
+}
+
+#super-btn {
+    margin-left: 15px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: bolder;
+}
+
+#super-btn:hover {
+    background-color: red;
+    color: aliceblue;
+}
