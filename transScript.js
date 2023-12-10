@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (nameInput.value.trim() !== "" && parseFloat(amtInput.value) > 0 && rad_value !== null) {
-            let slno = current + 1;
+            current++;
+            let slno = current;
             let table = document.getElementById("trans-table");
             const newRow = table.insertRow();
             const cell1 = newRow.insertCell(0);
